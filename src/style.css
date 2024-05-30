@@ -1,0 +1,90 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.form {
+    grid-column: 2/3;  /* se asocia al grid del container */
+}
+
+.formBody{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.formBody > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.passwordDiv{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 10%;
+    gap: 10px;
+}
+
+
+.formBody label{ 
+    text-shadow: 1px 0px 3px rgba(156,190,126,0.82);
+    }
+
+.formBody input{ 
+    height: 20px;
+    width: 50%;
+    border-radius: 6px;
+    border: 2px solid #E5E7EB;
+    }
+
+.formBody input:focus{ 
+    box-shadow: 3px 3px 5px 0px rgba(51,85,255,0.79);
+    border: 2px solid blue;
+    }
+
+    .btn {
+        width: 15%;
+        box-sizing: border-box;
+        position: relative;
+        left: 15px;
+        top: 25px;
+        background-color: #596D48; font-size: 16px; line-height: 16px; padding: 6px;
+        border-radius: 10px; font-family: Georgia, serif; font-weight: normal; text-decoration: none;
+        font-style: normal; font-variant: normal; text-transform: none; 
+        background-image: linear-gradient(to right, #596D48 0%, #7A9663 50%, #9CBE7E 100%); 
+        box-shadow: rgb(0, 0, 0) 5px 5px 10px 5px; border: 2px solid #596D48; display: inline-block;
+    }
+    .btn:hover {
+    background: #5B6F4A; }
+    .btn:active {
+    background: #9CBE7E; }
+
+
+
+/* This is our style for the invalid fields */
+input:invalid {
+	border-color: #900;
+	background-color: #fdd;
+  }
+  
+input:focus:invalid {
+	outline: none;
+  }
+  
+  /* This is the style of our error messages */
+  .error {
+	width: 100%;
+	padding: 0;
+  
+	font-size: 1rem;
+	color: white;
+	background-color: #900;
+	border-radius: 0 0 5px 5px;
+  
+	box-sizing: border-box;
+  }
+  
+  .error.active {
+	padding: 0.3em;
+  }
