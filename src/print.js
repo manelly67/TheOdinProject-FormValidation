@@ -262,6 +262,7 @@ export default function printForm(arg) {
           `form update ${email} ${country} ${zipCode} ${userPassword} ${confirmPassword}`,
         );
         /* here include the code to save the data input and sent to storage */
+        document.getElementById('form').reset();
       }
     }
   });
